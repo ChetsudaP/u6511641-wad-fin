@@ -12,9 +12,9 @@ export async function DELETE(request, { params }) {
   return Response.json(await Product.findByIdAndDelete(id));
 }
 
-export async function GET() {
-  return Response.json(await Product.find());
-}
+// export async function GET() {
+//   return Response.json(await Product.find());
+// }
 
 export async function POST(request) {
   const body = await request.json();
